@@ -1,4 +1,10 @@
 public class Main {
+    int z;
+
+    public Main() { //this is a constructor and it does not have a return type, just like void
+        z = 100; //it is basically used to initialize attributes declared in the main class
+        //it can take in parameters
+    }
     public static void main(String[] args) {
         //primitive data types => byte, short, int, long, float, double, boolean and char
         //Non-primitive data types => String, Arrays, Classes

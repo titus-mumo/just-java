@@ -1,12 +1,13 @@
 public class Methods {
     public static void main(String[] args) {
-        System.out.println(findArea(2));
-        System.out.println(findArea(3));
-        System.out.println(findArea(4));
+        Methods main = new Methods();
+        System.out.println(main.findArea(3));
         checkAge(22);
-        System.out.println(sum(100));
+        System.out.println(sum(10));
+        Methods myMethod = new Methods();
+        System.out.println(myMethod.y);
     }
-    static int findArea(int side) {
+    public int findArea(int side) {
         int area = side * side;
         return area;
     }
@@ -18,6 +19,8 @@ public class Methods {
             System.out.println("He can feed himself");
         }
     }
+
+    int y = 4;
 
     static int sum(int k) {
         if (k > 0) {
